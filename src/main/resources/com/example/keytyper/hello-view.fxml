@@ -2,9 +2,18 @@
 
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
 
-<VBox fx:id="VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.keytyper.Controllers.Controller">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.keytyper.Controllers.Controller">
    <children>
-      <TextFlow fx:id="text" prefHeight="400.0" prefWidth="600.0" />
+      <TextFlow fx:id="text" layoutX="24.0" layoutY="14.0" prefHeight="300.0" prefWidth="500.0" />
+      <Label fx:id="timersLabel" layoutX="240" layoutY="304.0" lineSpacing="10.0" prefHeight="42.0" prefWidth="48.0" textAlignment="CENTER">
+         <font>
+            <Font size="35.0"/>
+         </font>
+      </Label>
+      <Button fx:id="timerStartButton" layoutX="220.0" layoutY="260.0" mnemonicParsing="false" onAction="#buttonStartClick" prefHeight="42.0" prefWidth="77.0" text="Start"/>
    </children>
-</VBox>
+</Pane>

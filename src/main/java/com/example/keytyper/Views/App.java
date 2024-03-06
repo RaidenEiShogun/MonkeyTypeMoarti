@@ -1,4 +1,4 @@
-package com.example.keytyper;
+package com.example.keytyper.Views;
 
 import com.example.keytyper.Controllers.Controller;
 import javafx.application.Application;
@@ -11,9 +11,9 @@ import java.io.IOException;
 public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/com/example/keytyper/hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 520, 440);
+        stage.setTitle("monkeyType");
         stage.setScene(scene);
         ((Controller) fxmlLoader.getController()).setScene(scene);
         ((Controller) fxmlLoader.getController()).setupUI();
